@@ -9,7 +9,7 @@ var T = new Twit({
 });   
 
 let searchQuery = { 
-  q: "BigRussianBoss",
+  q: "Навальный украл",
   count: 5,
   lang: 'ru',
   max_id: null,
