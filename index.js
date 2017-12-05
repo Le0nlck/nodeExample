@@ -21,12 +21,4 @@ T.get('search/tweets', searchQuery, function(error, tweets, response){
         console.log(tweets);
     });
 
-  function gotData(err, data, response) {
-    var cnt=0;
-    var tweets = data;
-    for(var i = 0 ; i < tweets.length ; i++){
-        console.log(tweets[i].text);
-        cnt ++;
-    }
-    console.log(cnt);  
-  }
+  
