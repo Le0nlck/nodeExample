@@ -10,15 +10,19 @@ var T = new Twit({
 
 let searchQuery = { 
   q: "Навальный украл",
-  count: 5,
+  count: 2,
   lang: 'ru',
   max_id: null,
   include_entities: null
 };
 
 T.get('search/tweets', searchQuery, function(error, tweets, response){
-        if (error) throw error;
-        console.log(tweets);
+        if (error) throw error;        
+        for(var i = 0; i < searchQuery.count; i++){                    
+                   console.log(tweets.statuses[i].user.screen_name+ ' от ' +tweets.statuses[i].created_at + ' чирикнул в твиттере:');                   
+                   console.log(tweets.statuses[i].text);
+                   console.log('========================');            
+            };                
     });
 
   

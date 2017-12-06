@@ -2,14 +2,15 @@
   "name": "Tweet",
   "version": "0.0.1",
   "description": "",
-  "main": "index.js",
+  "main": "twitter_req.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "npm i && node index.js"
+    "start": "npm i && node index.js"    
   },
   "author": "hz_18@mail.ru",
   "license": "ISC",
   "dependencies": {
-    "twitter": "^1.7.1"
+    "twitter": "^1.7.1",
+    "vk":"^0.1.3"    
   }
 }
